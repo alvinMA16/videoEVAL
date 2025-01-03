@@ -3,12 +3,26 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>我的应用</title>
+    <title>视频混剪 EVAL</title>
     <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
 </head>
 <body>
-    <h1>欢迎使用我的应用</h1>
+    <h1>视频混剪 pipeline EVAL</h1>
     
+    <form id="evalForm">
+        <div class="selection-group">
+            <p>请选择需要评测的环节：</p>
+            <div class="radio-group">
+                <input type="radio" id="promptD" name="evalType" value="promptD" checked>
+                <label for="promptD">Prompt D</label>
+                
+                <input type="radio" id="promptE" name="evalType" value="promptE">
+                <label for="promptE">Prompt E</label>
+            </div>
+        </div>
+        <button type="submit">确认</button>
+    </form>
+
     <script src="{{ url_for('static', filename='js/main.js') }}"></script>
 </body>
 </html> 
