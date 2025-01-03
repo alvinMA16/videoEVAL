@@ -30,17 +30,32 @@
                 <p>选择模型：</p>
                 <div class="radio-group">
                     <input type="radio" id="gpt35" name="model" value="gpt-3.5-turbo" checked>
-                    <label for="gpt35">GPT-3.5</label>
+                    <label for="gpt35">gpt-4o-2024-11-20</label>
                     
                     <input type="radio" id="gpt4" name="model" value="gpt-4">
-                    <label for="gpt4">GPT-4</label>
+                    <label for="gpt4">Claude</label>
                 </div>
             </div>
 
             <div class="prompt-section">
-                <p>当前加载的 Prompt：</p>
+                <h3>当前加载的 Prompt</h3>
                 <div id="promptContent" class="prompt-display">
-                    <!-- Prompt 内容将通过 JavaScript 动态加载 -->
+                    <div class="prompt-item">
+                        <h4>名称</h4>
+                        <div class="prompt-value" id="promptName"></div>
+                    </div>
+                    <div class="prompt-item">
+                        <h4>描述</h4>
+                        <div class="prompt-value" id="promptDescription"></div>
+                    </div>
+                    <div class="prompt-item">
+                        <h4>System Prompt</h4>
+                        <div class="prompt-value code-block" id="promptSystem"></div>
+                    </div>
+                    <div class="prompt-item">
+                        <h4>General Prompt</h4>
+                        <div class="prompt-value code-block" id="promptGeneral"></div>
+                    </div>
                 </div>
             </div>
 

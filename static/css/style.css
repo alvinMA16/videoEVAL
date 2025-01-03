@@ -55,4 +55,53 @@ button:hover {
 
 button:active {
     transform: translateY(1px);
+}
+
+.prompt-section {
+    margin: 2rem 0;
+    padding: 1.5rem;
+    background-color: #f8f9fa;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.prompt-section h3 {
+    margin-top: 0;
+    margin-bottom: 1.5rem;
+    color: #2c3e50;
+    font-size: 1.25rem;
+}
+
+.prompt-display {
+    display: grid;
+    gap: 1.5rem;
+}
+
+.prompt-item {
+    background: white;
+    padding: 1rem;
+    border-radius: 6px;
+    border: 1px solid #e9ecef;
+}
+
+.prompt-item h4 {
+    margin: 0 0 0.5rem 0;
+    color: #495057;
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+.prompt-value {
+    color: #495057;
+    line-height: 1.5;
+}
+
+.code-block {
+    font-family: monospace;
+    background-color: #f8f9fa;
+    padding: 1rem;
+    border-radius: 4px;
+    border: 1px solid #e9ecef;
+    white-space: pre-wrap;
+    word-break: break-word;
 } 

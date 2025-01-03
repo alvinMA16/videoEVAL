@@ -15,10 +15,13 @@ document.addEventListener('DOMContentLoaded', () => {
             if (!response.ok) {
                 throw new Error('Failed to load prompt');
             }
-            const promptText = await response.text();
+            const data = await response.json();
             
             // 显示 Prompt 内容
-            promptContent.textContent = promptText;
+            document.getElementById('promptName').textContent = data.name;
+            document.getElementById('promptDescription').textContent = data.description;
+            document.getElementById('promptSystem').textContent = data.prompts.system;
+            document.getElementById('promptGeneral').textContent = data.prompts.general;
             
             // 显示配置部分
             configSection.style.display = 'block';
