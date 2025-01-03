@@ -23,6 +23,31 @@
         <button type="submit">确认</button>
     </form>
 
+    <div id="configSection" style="display: none;">
+        <h2>配置信息</h2>
+        <form id="configForm">
+            <div class="selection-group">
+                <p>选择模型：</p>
+                <div class="radio-group">
+                    <input type="radio" id="gpt35" name="model" value="gpt-3.5-turbo" checked>
+                    <label for="gpt35">GPT-3.5</label>
+                    
+                    <input type="radio" id="gpt4" name="model" value="gpt-4">
+                    <label for="gpt4">GPT-4</label>
+                </div>
+            </div>
+
+            <div class="prompt-section">
+                <p>当前加载的 Prompt：</p>
+                <div id="promptContent" class="prompt-display">
+                    <!-- Prompt 内容将通过 JavaScript 动态加载 -->
+                </div>
+            </div>
+
+            <button type="submit">开始评测</button>
+        </form>
+    </div>
+
     <script src="{{ url_for('static', filename='js/main.js') }}"></script>
 </body>
 </html> 
